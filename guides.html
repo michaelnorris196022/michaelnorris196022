@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guides — PC Build Basics</title>
+  <meta name="description" content="Step-by-step PC building guides: planning, compatibility, assembly, and troubleshooting.">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body id="guides" class="page">
+  <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="PC Build Basics home">
+      <span class="brand-mark" aria-hidden="true">🧰</span>
+      <span class="brand-text">PC Build Basics</span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">☰</button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="parts.html">Parts</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌓</button>
+  </div>
+</header>
+  <main class="site-main container">
+    <header class="page-header">
+      <h1>Guides</h1>
+      <p>Follow these steps to plan and assemble your first PC.</p>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Guides</li>
+      </ol>
+    </nav>
+
+    <section id="roadmap" class="guide-section">
+      <h2>Build Roadmap</h2>
+      <ol class="roadmap">
+        <li>Define your goal: gaming, content creation, workstation, or general use.</li>
+        <li>Pick your CPU and platform (e.g., AMD Ryzen vs. Intel Core).</li>
+        <li>Select a compatible motherboard (chipset, socket, and form factor).</li>
+        <li>Choose GPU performance for your target resolution and refresh rate.</li>
+        <li>Memory (RAM) capacity/speed; storage (SSD/NVMe) capacity.</li>
+        <li>Case and cooling: airflow, radiator clearance, and noise level.</li>
+        <li>Power supply (PSU) with adequate wattage and efficiency.</li>
+        <li>Assemble, cable-manage, update BIOS, and install OS/drivers.</li>
+      </ol>
+    </section>
+
+    <section id="compatibility" class="guide-section">
+      <h2>Compatibility Essentials</h2>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Form Factor</h3>
+          <p>Ensure your case supports your motherboard size (ATX, mATX, ITX) and GPU length &amp; cooler height.</p>
+        </article>
+        <article class="card">
+          <h3>Wattage</h3>
+          <p>Estimate total power draw (CPU + GPU + headroom). Choose an 80+ Gold PSU with 20–30% headroom.</p>
+        </article>
+        <article class="card">
+          <h3>Memory</h3>
+          <p>Check QVL for RAM kits and match speeds/timings to your platform’s sweet spot.</p>
+        </article>
+        <article class="card">
+          <h3>Storage</h3>
+          <p>Prefer NVMe SSDs on a fast M.2 slot for OS and frequently used apps; add SATA SSD/HDD for bulk.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="assembly" class="guide-section">
+      <h2>Assembly Basics</h2>
+      <details class="accordion" open>
+        <summary>Prepare the motherboard outside the case</summary>
+        <div class="accordion-panel">
+          <p>Install CPU, cooler backplate, and RAM on the motherboard on a clean surface before mounting in the case.</p>
+        </div>
+      </details>
+      <details class="accordion">
+        <summary>Case prep &amp; standoffs</summary>
+        <div class="accordion-panel">
+          <p>Install the I/O shield (if separate) and correct standoffs to match your board’s form factor.</p>
+        </div>
+      </details>
+      <details class="accordion">
+        <summary>Pasting &amp; cooler</summary>
+        <div class="accordion-panel">
+          <p>Use a pea-sized dot of thermal paste for most CPUs; mount the cooler evenly, tightening in a cross pattern.</p>
+        </div>
+      </details>
+      <details class="accordion">
+        <summary>First boot &amp; BIOS</summary>
+        <div class="accordion-panel">
+          <p>Update BIOS, enable XMP/EXPO for RAM, set proper boot order, and verify temps.</p>
+        </div>
+      </details>
+    </section>
+  </main>
+  
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 PC Build Basics · Built with pure HTML, CSS, and JS.</p>
+  </div>
+</footer>
+
+</body>
+</html>

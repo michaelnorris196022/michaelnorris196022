@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parts — PC Build Basics</title>
+  <meta name="description" content="Curated example PC parts lists with categories and filters.">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body id="parts" class="page">
+  <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="PC Build Basics home">
+      <span class="brand-mark" aria-hidden="true">🧰</span>
+      <span class="brand-text">PC Build Basics</span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">☰</button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="parts.html">Parts</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌓</button>
+  </div>
+</header>
+  <main class="site-main container">
+    <header class="page-header">
+      <h1>Parts</h1>
+      <p>Explore example parts across categories. Use the filter and search to narrow down choices.</p>
+    </header>
+
+    <div class="controls">
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="all">All</option>
+        <option>CPU</option>
+        <option>GPU</option>
+        <option>Motherboard</option>
+        <option>Memory</option>
+        <option>Storage</option>
+        <option>PSU</option>
+        <option>Case</option>
+        <option>Cooling</option>
+      </select>
+
+      <label for="search">Search:</label>
+      <input id="search" type="search" placeholder="e.g., 9800X3D, ATX, 750W">
+    </div>
+
+    <div class="table-wrap">
+      <table class="parts-table" aria-describedby="parts-help">
+        <thead>
+          <tr>
+            <th scope="col">Category</th>
+            <th scope="col">Model</th>
+            <th scope="col">Notes</th>
+          </tr>
+        </thead>
+        <tbody id="parts-tbody">
+          <!-- rows injected by JS -->
+        </tbody>
+      </table>
+      <p id="parts-help" class="muted">These are example parts and not endorsements. Check compatibility before purchase.</p>
+    </div>
+  </main>
+  
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 PC Build Basics · Built with pure HTML, CSS, and JS.</p>
+  </div>
+</footer>
+
+</body>
+</html>

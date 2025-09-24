@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — PC Build Basics</title>
+  <meta name="description" content="Get in touch with questions about planning or assembling your first PC.">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body id="contact" class="page">
+  <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="PC Build Basics home">
+      <span class="brand-mark" aria-hidden="true">🧰</span>
+      <span class="brand-text">PC Build Basics</span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">☰</button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="parts.html">Parts</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌓</button>
+  </div>
+</header>
+  <main class="site-main container">
+    <header class="page-header">
+      <h1>Contact</h1>
+      <p>Send a message — we’d love to hear what you’re building!</p>
+    </header>
+
+    <form id="contact-form" novalidate>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input id="name" name="name" required placeholder="Your name">
+        <small class="error" id="name-error" role="alert"></small>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com">
+        <small class="error" id="email-error" role="alert"></small>
+      </div>
+
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required rows="6" placeholder="How can we help?"></textarea>
+        <small class="error" id="message-error" role="alert"></small>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Send</button>
+      <p class="muted">This demo stores nothing and has no server — it only validates inputs in your browser.</p>
+      <div id="form-success" class="success" aria-live="polite" hidden>Thanks! Your message passed validation.</div>
+    </form>
+  </main>
+  
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 PC Build Basics · Built with pure HTML, CSS, and JS.</p>
+  </div>
+</footer>
+
+</body>
+</html>
